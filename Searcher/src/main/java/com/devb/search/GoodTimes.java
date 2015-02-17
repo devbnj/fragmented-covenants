@@ -1,3 +1,13 @@
+/**
+ * GoodTimes.java 
+ * For the Book - Fragmented Covenants
+ * Author Dev B, Copyright 2015 Dev B
+ * This software is distributed under the terms 
+ * of the Open Source Apache v2.0 license
+ * This program is distributed in the hope that it will be useful
+ * The author Makes No Warranties, Express OR Implied
+ */
+
 package com.devb.search;
 
 import java.util.HashMap;
