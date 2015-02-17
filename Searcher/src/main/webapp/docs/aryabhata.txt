@@ -1,0 +1,6 @@
+The Aryabhatiya presents a method to solve linear indeterminate equations, which may 
+be adapted to find the multiplicative inverse in a group that is of interest in cryptography, 
+signal processing, coding and computer design. Although Aryabhata calls this method the
+Kuttaka (the pulverizer), it is now better known as the Aryabhata Algorithm
+
+Aryabhata algorithm is an algorithm to solve indeterminate Diophantine equations and for residue arithmetic. In particular, it is an algorithm to determine the smallest positive number which satisfies a list of congruences. It is first described in the mathematician-astronomer Aryabhata's book Aryabhatiya (499). In recent years, it has been used for cryptographic applications.
