@@ -1,0 +1,60 @@
+<div>
+<div class="posted">
+	<h1>Searcher</h1>
+	<label>Searcher uses several state of the art technologies to provide services:</label>
+	<ul>
+		<li>Apache Tomcat</li>
+		<li>AngularJS</li>
+		<li>Jersey JAX-RS</li>
+		<li>Lucene Search Engine</li>
+		<li>Amazon EC2</li>
+	</ul>
+</div>
+<div class="posted">
+	<h1>Search</h1>
+	<label>Search</label>
+	<form>
+    <input type="text" id="queryString" ng-model="queryForm.queryString" ng-minlength="5" ng-maxlength="12" />
+    <select id="responseType" ng-model="queryForm.responseType">
+		<option value="json" selected>json</option>
+		<option value="jsonindic">json indic</option>
+	</select>
+	<input type="submit" id="buttoner" ng-click="queryForm.submitTheForm()" value="Search" />
+	</form>
+</div>
+
+<div class="search">
+	<h1>Narrow</h1>
+	<label>Narrow Query</label>
+	<input type="text" ng-model="myquery" />
+	
+	<label>Sort by:
+		<select ng-model="askSearcher">
+			<option value="query" selected>Query</option>
+			<option value="path">Doc Path</option>
+		</select>
+	</label>
+	<br>
+	<label>
+		<input type="radio" ng-model="direction" name="direction" checked>
+		Ascending
+	</label>
+	<label>	
+		<input type="radio" ng-model="direction" name="direction" value="reverse" >
+		Descending
+	</label>
+	<p>&nbsp;	There are {{searcherVariable.length}} items</p>
+</div>
+	
+	<ul> 
+		<li class="itemHolder" ng-repeat="item in searcherVariable | filter:myquery | orderBy:askSearcher:direction">
+			<div>
+				<h3> {{item.path | lowercase }}</h3>
+				<p class="rquery">Query: {{item.query}}</p>
+				<p class="rline">{{item.line}}</p>
+				<p> {{item.contents}}</p>
+
+			</div>
+		</li>
+	</ul>
+</div>
