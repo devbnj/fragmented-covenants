@@ -8,6 +8,11 @@
 //  Version:  1.00
 //  
 //  License Open Source - Apache License 2.0
+//  This software is distributed under the terms 
+//  of the Open Source Apache v2.0 license
+//  This program is distributed in the hope that it will be useful
+//  The Author Makes No Warranties, Express OR Implied
+//
 //
 
 #include <WiFi.h>
